@@ -12,7 +12,7 @@ def success() {
             message: "Declarative Job completed successfully!",
             channel: "#jenkins",
             teamDomain: "demoworkspace-6868926",
-            tokenCredentialId: "e96c6c7f-1fdf-4c4a-80fd-5ad178092678"
+            tokenCredentialId: "P0M8IV1MDogg1dcB2KozPGjB"
         )
     }
 }
@@ -25,7 +25,7 @@ def failure() {
             message: "Declarative Job failed!",
             channel: "#jenkins",
             teamDomain: "demoworkspace-6868926",
-            tokenCredentialId: "e96c6c7f-1fdf-4c4a-80fd-5ad178092678"
+            tokenCredentialId: "P0M8IV1MDogg1dcB2KozPGjB"
         )
     }
 }
