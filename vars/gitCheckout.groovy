@@ -1,3 +1,4 @@
+// Checkout Github Public Repository
 def call(Map config = [:]) {
             checkout scm: [
                 $class: 'GitSCM',
