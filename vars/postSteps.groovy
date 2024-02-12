@@ -1,3 +1,7 @@
+// vars/postSteps.groovy
+
+package my_shared_library
+
 def call() {
     return {
         post {
