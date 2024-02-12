@@ -1,3 +1,3 @@
-def call(string goal){
+def call(String goal){
   sh 'mvn clean ${goal}'
 }
