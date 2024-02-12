@@ -10,9 +10,9 @@ def success() {
         slackSend(
             color: '#36a64f',
             message: "Declarative Job completed successfully!",
-            channel: "#jenkins",
+            channel: "#slacknotification",
             teamDomain: "demoworkspace-6868926",
-            tokenCredentialId: "P0M8IV1MDogg1dcB2KozPGjB"
+            tokenCredentialId: "h1N9SN1RzhqJoKkB4MpwE3xb"
         )
     }
 }
@@ -23,9 +23,9 @@ def failure() {
         slackSend(
             color: '#ff0000',
             message: "Declarative Job failed!",
-            channel: "#jenkins",
+            channel: "#slacknotification",
             teamDomain: "demoworkspace-6868926",
-            tokenCredentialId: "P0M8IV1MDogg1dcB2KozPGjB"
+            tokenCredentialId: "h1N9SN1RzhqJoKkB4MpwE3xb"
         )
     }
 }
