@@ -1,4 +1,4 @@
-def installpre-requisites(){
+def installprerequisites(){
   // Update apt packages
   sh 'sudo apt update'
   // Install Go using snap
