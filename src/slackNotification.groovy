@@ -1,4 +1,4 @@
-// src/SlackNotification.groovy
+// src/slackNotification.groovy
 
 def call(String status) {
     if (status == 'SUCCESS') {
