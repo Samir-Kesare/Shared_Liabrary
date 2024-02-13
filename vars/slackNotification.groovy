@@ -1,4 +1,4 @@
-// vars/postSteps.groovy
+// vars/slackNotification.groovy
 
 def call(String status) {
     if (status == 'SUCCESS') {
