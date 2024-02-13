@@ -1,5 +1,3 @@
-// src/slackNotification.groovy
-
 def sendSuccessNotification() {
     slackSend channel: 'jenkinss', color: '#00FF00', message: 'Job Build successfully'
 }
