@@ -2,11 +2,12 @@
 
 def call(String status) {
     if (status == 'SUCCESS') {
-            slackSend channel: 'jenkinss', message: 'Job Build Successfully'
+            slackSend channel: 'jenkinss',color: '#00FF00' ,message: 'Job Build successfully'
     }
     if (status == 'FAILURE'){
-            slackSend channel: 'jenkinss', message: 'Job Failed'
+            slackSend channel: 'jenkinss', color: '#FF0000',message: 'Job Failed '
     }
 }
+
 
 
