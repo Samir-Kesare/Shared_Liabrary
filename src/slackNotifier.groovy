@@ -1,7 +1,7 @@
 // src/slackNotifier.groovy
 
-class slackNotifier {
-    static void slackNotification(String status) {
+def slackNotifier = new Object() {
+    def slackNotification(String status) {
         if (status == 'SUCCESS') {
             slackSend channel: 'jenkinss', color: '#00FF00', message: 'Job Build successfully'
         }
@@ -10,3 +10,4 @@ class slackNotifier {
         }
     }
 }
+
