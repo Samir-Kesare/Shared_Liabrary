@@ -1,4 +1,4 @@
-// Clone Private Repo
+// Checkout Github Private Repository
 def call(Map config = [:]) {
     checkout scm: [
         $class: 'GitSCM',
