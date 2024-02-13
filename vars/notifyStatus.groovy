@@ -2,11 +2,12 @@
 
 def call(String status) {
     if (status == 'SUCCESS') {
-        slackNotification.sendSuccessNotification()
+        sendSuccessNotification()
     } else if (status == 'FAILURE') {
-        slackNotification.sendFailureNotification()
+        sendFailureNotification()
     } else {
         println "Invalid status: $status"
     }
 }
+
 
