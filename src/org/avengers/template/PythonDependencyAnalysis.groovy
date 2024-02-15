@@ -3,15 +3,17 @@ package org.avengers.template
 import org.avengers.common.*
 import org.avengers.python.depedencyScanning.*
 
-def call(String url, String creds, String branch){
-   = new (version)
+def call(String url, String creds, String branch, String depVersion, String javaVersion){
+  javaDownload = new JavaDownload()
+  downloadDependencyCheck = new DownloadDependencyCheck()
   gitCheckoutPrivate = new GitCheckoutPrivate()
-   = new ()
-  report = new ()
+  dependencyCheck = new DependencyCheck()
+  clean = new Clean()
 
-  .call(version)
+  javaDownload.call(javaVersion)
+  downloadDependencyCheck.call(depVersion) 
   gitCheckoutPrivate.call(url, creds, branch)
-  .call()
-  report.call()
+  dependencyCheck.call()
+  clean.call()
 }
   
