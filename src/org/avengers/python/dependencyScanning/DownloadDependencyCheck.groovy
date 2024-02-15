@@ -1,4 +1,4 @@
-package org.avengers.golang.dependencyScanning
+package org.avengers.python.dependencyScanning
 
 def call(String depVersion) {
     stage('Download Dependency Check') {
