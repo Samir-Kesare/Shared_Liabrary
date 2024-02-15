@@ -1,6 +1,6 @@
 package org.avengers.golang.dependencyScanning
 
-def call(depVersion) {
+def call(String depVersion) {
     stage('Download Dependency Check') {
         script {
             sh "wget -q https://github.com/jeremylong/DependencyCheck/releases/download/v${depVersion}/dependency-check-${depVersion}-release.zip"
