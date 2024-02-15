@@ -7,11 +7,11 @@ def call(String url, String creds, String branch){
   installGo = new InstallGo()
   gitCheckoutPrivate = new GitCheckoutPrivate()
   testing = new Testing()
-  html = Html()
+  report = new Report()
 
   installGo.call()
   gitCheckoutPrivate.call(url, creds, branch)
   testing.call()
-  html.call()
+  report.call()
 }
   
